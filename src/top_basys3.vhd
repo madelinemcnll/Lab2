@@ -89,7 +89,10 @@ begin
 
 	--	Port map: wire your component up to the switches and seven-segment display cathodes
 	-----------------------------------------------------	
-	
+	port map (
+	   
+	   
+	);
 	
 	-- CONCURRENT STATEMENTS ----------------------------
 	
