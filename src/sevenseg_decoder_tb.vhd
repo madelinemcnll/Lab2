@@ -67,19 +67,19 @@ begin
    begin
         
         wait for 10 ns;
-        assert w_seg_n = "1111110" report "should be 1111110" severity failure;
+        assert w_seg_n = "1000000" report "should be 1000000" severity failure;
 
         w_Hex <= "0100"; wait for 10 ns;
-            assert w_seg_n = "0110011" report "should be 0110011" severity failure;
+            assert w_seg_n = "0011001" report "should be 0011001" severity failure;
             
         w_Hex <= "0101"; wait for 10 ns;
-            assert w_seg_n = "1011011" report "should be 1011011" severity failure;
+            assert w_seg_n = "0010010" report "should be 0010010" severity failure;
             
         w_Hex <= "1001"; wait for 10 ns;
-            assert w_seg_n = "1110011" report "should be 1110011" severity failure;
+            assert w_seg_n = "0011000" report "should be 0011000" severity failure;
             
         w_Hex <= "1111"; wait for 10 ns;
-            assert w_seg_n = "1000111" report "should be 1000111" severity failure;
+            assert w_seg_n = "0001110" report "should be 0001110" severity failure;
         
         wait; 
             
